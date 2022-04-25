@@ -1,0 +1,58 @@
+#search,h2
+      {
+        width: 300px;
+        text-align: center;
+        height: 40px;
+        border: 3px solid #383838;;
+         border-radius: 10px;
+        margin-left: 40%;
+        margin-bottom: 2%;
+        font-size: 25px;
+        font-weight: 500;
+      }
+
+     h1
+     {
+          color: #383838;
+          font-size: 25px;
+          border: none;
+          border-radius: 10px;
+          width: 250px;
+          padding: 10px;
+          background-color: #B4FF9F;
+          margin-left: 20px;
+   }
+      /* #movies1
+      {
+        border: 1px solid black;
+        height: 100px;
+        width: 300px;
+        margin-top: "none";
+        overflow: scroll;
+      } */
+      #movies
+      {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+        text-align: center;
+      }
+      .book_now
+      {
+          padding: 5px 10px;
+          background-color: red;
+          border:  none;
+          border-radius: 10px;
+          color: white;
+          font-weight: 600;
+          font-size: 20px;
+          border:  2px solid #383838;
+      }
+
+      .price
+      {
+           margin-top: -10px;
+           margin-bottom: 0px;
+
+      }

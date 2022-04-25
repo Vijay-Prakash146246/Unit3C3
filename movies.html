@@ -5,28 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movies</title>
-    <style>
-      #search
-      {
-        width: 300px;
-      }
-      #movies1
-      {
-        border: 1px solid black;
-        height: 100px;
-        width: 300px;
-        margin-top: "none";
-        overflow: scroll;
-      }
-      #movies
-      {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: auto;
-        gap: 20px;
-        text-align: center;
-      }
-    </style>
+   <link rel="stylesheet" href="style/movies.css">
   </head>
   <body>
     <div id="navbar">
@@ -35,7 +14,7 @@
     </div>
     <div id="search_bar">
       <!-- input box for searching movies with id as "search" -->
-      <input oninput=" debounce(main,300)" type="text" name="" id="search">
+      <input oninput=" debounce(main,2000)" type="text" name="" id="search" placeholder="Search Here">
       <!-- No button should be there for searching movies, it should search with input  -->
     </div>
      <div id="movies1"></div>

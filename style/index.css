@@ -1,0 +1,72 @@
+#add-money
+{
+  text-align: center;
+   border: 4px solid #383838; 
+  width: 70%;
+  margin: auto;
+  height: 450px;
+  background-color: #B4FF9F;
+  border-radius: 10px;
+}
+input
+{
+  height: 40px;
+  width: 300px;
+  border:  2px solid #383838;
+  text-align: center;
+  margin-top: 0%;
+  background-color: white;
+  color:black ;
+  font-weight: 500;
+  font-size: medium;
+  border-radius: 10px;
+}
+h2
+{
+     color: #383838;
+     text-align: center;
+     margin-top: 100px;
+     font-weight: bold;
+}
+h1
+{
+     color: #383838;
+     font-size: 25px;
+     border: none;
+     border-radius: 10px;
+     width: 250px;
+     padding: 10px;
+     background-color: #B4FF9F;
+     margin-left: 20px;
+}
+#add_to_wallet
+{
+     padding: 15px 25px;
+     background-color: #FFD124;
+     border:  none;
+     border-radius: 10px;
+     color: black;
+     font-weight: 600;
+     font-size: 20px;
+     border:  2px solid #383838;
+}
+#book_movies
+{
+     padding: 15px 25px;
+     background-color: red;
+     border:  none;
+     border-radius: 10px;
+     color: white;
+     font-weight: 600;
+     font-size: 20px;
+     border:  2px solid #383838;
+}
+#parent
+{
+     border:  5px solid #383838;
+     width: 95%;  
+     margin: auto;
+     height: 570px;
+     border-radius: 10px;
+     background-color: #4700D8;
+}

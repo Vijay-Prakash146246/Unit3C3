@@ -7,11 +7,11 @@ let walletAmount = JSON.parse(localStorage.getItem("amount"))||[];
 let id;
 if(walletAmount!=0)
 {
-     document.getElementById("wallet").innerText=walletAmount;
+     document.getElementById("wallet").innerText=`Wallet Balance ₹ ${walletAmount}`;
 }
 else
 {
-     document.getElementById("wallet").innerText=0;
+     document.getElementById("wallet").innerText=`Wallet Balance ₹ 0`;
 }
 
 // Fetching the data from API
@@ -53,11 +53,14 @@ let movie_data= JSON.parse(localStorage.getItem("SearchMovies"))||[];
          let poster=document.createElement("img");
          poster.src=el.Poster;
          let name = document.createElement("p");
-         name.innerText=el.Title;
+         name.innerText=el.Title; 
+         let Price = document.createElement("h4")
+         Price.innerText="₹ 100/"
+         Price.setAttribute("class","price")
          let btn = document.createElement("button");
-         btn.innerText="book now";
+         btn.innerText="Book Now";
          btn.setAttribute("class","book_now")
-         box1.append(poster,name,btn)
+         box1.append(poster,name,Price,btn)
          document.getElementById("movies").append(box1)
 
       btn.addEventListener("click",function(){
@@ -78,16 +81,16 @@ window.open("checkout.html");
 
 
 //Adding the movies 
-function appendMovies(data)
-{
-movies_div.innerHTML=null;
-data.forEach(function(el){
-     let p = document.createElement("p");
-     p.innerText=el.Title;
-     movies_div.append(p);
+// function appendMovies(data)
+// {
+// movies_div.innerHTML=null;
+// data.forEach(function(el){
+//      let p = document.createElement("p");
+//      p.innerText=el.Title;
+//      movies_div.append(p);
     
-});
-}
+// });
+// }
 
 //Assemble in a single function 
 async function main()

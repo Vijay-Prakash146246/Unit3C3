@@ -5,27 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Add Amount</title>
-    <style>
-      #add-money
-      {
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" href="style/index.css">
   </head>
   <body>
+    <div id="parent">
     <div id="navbar">
       <h1 id="wallet">Add Money to wallet</h1>
       <!-- Display the wallet amount here inside h1 tag with id as "wallet". Note only amount, no extra text. Like 500 not Rs 500 -->
     </div>
     <div id="add-money">
+      <h2>Add Money to wallet</h2>
       <!-- input box for accepting money with id as "amount" -->
       <input type="number" name="amount" id="amount" placeholder="Add Amount"> <br>
       <!-- button with id as "add_to_wallet" -->
-      <button onclick="addAmount()" id="add_to_wallet" style="margin: 15px;">add to wallet</button> <br>
+      <button onclick="addAmount()" id="add_to_wallet" style="margin: 15px;">Add To Wallet</button> <br>
       <!-- button with id as "book_movies" to go to movies.html -->
       
       <a href="movies.html"><button style="margin: 15px;" id="book_movies">Book-Movies</button></a> <br>
     </div>
+  </div>
   </body>
 </html>
 <script src="scripts/index.js"></script>
